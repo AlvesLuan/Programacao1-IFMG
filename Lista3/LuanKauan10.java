@@ -13,11 +13,12 @@ class LuanKauan10 {
             System.out.printf("Insira o numero "+i+": ");
             numero = Entrada.nextDouble();
             if (i == 1){ 
+                maiornumero = numero;
                 menornumero = numero;} 
             else {
                 if (numero < menornumero){
                     menornumero = numero;
-                }else{
+                }else if (numero > maiornumero){
                     maiornumero = numero;}
             }
         }
